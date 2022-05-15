@@ -1,6 +1,17 @@
-# MovieWebsiteNg
+# MovieWebsiteNg (build in progress)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
+<h3>A Single Page Application that allows you to view various categories of movies, do searches and see details (trailers, cast etc).</h3>
+
+<ul>
+  <li>API: imbd.com </li>
+
+  <li>Frontend: Angular framweork, no templates or UI libraries, only custom css</li>
+
+  <li>>No backend, I will install a local server to test form signin and signup.</li>
+ </ul>
+ 
+ <p>This project was created to test my knowledge and develop it over time</p>
+
 
 ## Development server
 
