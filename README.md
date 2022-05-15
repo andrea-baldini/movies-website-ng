@@ -1,4 +1,4 @@
-# MovieWebsiteNg (build in progress)
+# A complete movies webiste (build in progress with ng)
 
 <h3>A Single Page Application that allows you to view various categories of movies, do searches and see details (trailers, cast etc).</h3>
 
