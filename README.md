@@ -1,16 +1,29 @@
 # A complete movies SPA (build in progress with ng)
 
-<h3>A Single Page Application that allows you to view various categories of movies, do searches and see details (trailers, cast etc).</h3>
+<h2>A Single Page Application that allows you to view various categories of movies, do searches and see details (trailers, cast etc).</h2>
 
 <ul>
   <li>API: imbd.com </li>
 
   <li>Frontend: Angular framweork, no templates or UI libraries, only custom css</li>
 
-  <li>>No backend, I will install a local server to test form signin and signup.</li>
+  <li>No backend, I will install a local server to test form signin and signup.</li>
  </ul>
  
  <p>This project was created to test my knowledge and develop it over time</p>
+
+<h3>Some goodies :)</h3>
+
+<ul>
+  <li>infinite-scrools to get the movies</li>
+
+  <li>a shared service to manage the data from children to parents</li>
+
+  <li>a jwt token auth</li>
+  
+  <li>in progrs...</li>
+ </ul>
+ 
 
 
 ## Development server
