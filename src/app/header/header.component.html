@@ -1,0 +1,32 @@
+<header class="top-navbar">
+    
+    <nav class="navbar">
+        <a id="logo" href=""><img src="assets/images/logo-tipo.png" alt="labtv-logo"></a>
+
+        <input type="checkbox" id="hamburger-element" />
+        <label for="hamburger-element"></label>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a id="fb-icon" class="social-icons" href="#facebook"><img src="assets/images/fb-icon.png" alt="facebook"></a></li>
+            <li><a id="ig-icon" class="social-icons" href="#ig"><img src="assets/images/ig-icon.png" alt="instagram"></a></li>
+            <li><a id="youtube-icon" class="social-icons" href="#youtube"><img src="assets/images/youtube-icon.png" alt="youtube"></a></li>
+        </ul>
+
+    
+        <div class="navbar-right-icons">
+            <input type="checkbox" id="search-input" />
+            <label (click)="openSearchBar()" for="search-input" class="show-search-icon"></label>
+           
+            <a id="login" routerLink="/login"><img src="assets/images/person-icon-30.png" alt="login"></a>
+        </div>
+
+        <div class="nav-search-bar" *ngIf="isSearchVisible ? getScreenWidth < 768 : null" [@myInsertRemoveTrigger]>
+
+            <app-search-bar></app-search-bar>
+        </div>
+
+    </nav>
+</header>
+

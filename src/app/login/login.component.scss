@@ -1,0 +1,111 @@
+div.login {
+    background: linear-gradient(56deg, #000505, #002c2b 100%);;
+    padding: 40px;
+    height: auto;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 91px auto;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    small {
+
+        font-size: 13px;
+        a.und-link {
+        text-decoration:underline;
+        color: #d8d8dd;
+        }
+    }
+
+    div.line-separator {
+        height: 1px;
+        min-width: 300px;
+        max-width: 400px;
+        background:#424247;
+    }
+    
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        
+        div.input{
+            position: relative;
+            max-width: 400px;
+        }
+
+        input {
+            // width: 80vw;
+            min-width: 300px;
+            max-width: 400px;
+            height: 3rem;
+            outline: none;
+            border: 1px solid #d8d8dd;
+            color: #424247;
+            display: block;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            font-weight: 600;
+            text-indent: 1rem;
+        
+            &:focus ~ .floating-label,
+            &:not(:focus):valid ~ .floating-label {
+                top: 8px;
+                // bottom: 10px;
+                left: 20px;
+                font-size: 11px;
+                opacity: 0.6;
+            }
+        }   
+
+        label.floating-label {
+            position: absolute;
+            pointer-events: none;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.2s ease all;
+        }
+
+    }
+
+    button.btn {
+            min-width: 300px;
+            max-width: 400px;
+    }
+
+    div.error {
+        color: red;
+        height: auto;
+        width: auto;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    div.login {
+
+        div.line-separator {
+            width: 400px;
+        }
+        form {
+            div.input input {
+                width: 400px;
+            } 
+        }
+        button.btn {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 912px) {
+
+}

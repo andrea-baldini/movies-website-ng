@@ -1,0 +1,18 @@
+<main class="pageBody">
+
+    <section class="full-search-list">
+
+        <a routerLink="/home"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <h2>Ricerca <i>{{searchThisFilm}}</i></h2>
+
+        <div class="listSearchMoviesbody">
+
+            <app-movie-item *ngFor="let m of movieSearched | filter:'title':searchThisFilm" [movieItem]="m"></app-movie-item>
+
+        </div>
+
+
+    </section>
+
+</main>

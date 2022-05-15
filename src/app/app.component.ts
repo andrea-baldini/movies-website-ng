@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'movie-website-ng';
+
+  searchValue: string = "";
+
+  searchInput(event: string) {
+  console.log(event)
+  this.searchValue = event;
+  }
+
 }

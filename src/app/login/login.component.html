@@ -1,0 +1,29 @@
+<div class="login">
+    <h3>Login</h3>
+    <form #miaForm="ngForm" (ngSubmit)="test()" novalidate>
+
+        <div class="input">
+            <input type="text" class="" name="email" id="email" [(ngModel)]="loginFormInput.email" required autocomplete="off" #email="ngModel">
+            <label class="floating-label" for="pass">Email</label>
+            <div class="error" *ngIf="email.invalid && pass.touched">Il titolo non è valido</div>
+        </div>
+
+        <div class="input">
+            <input type="password"  class=""  name="pass" id="pass" [(ngModel)]="loginFormInput.password" required autocomplete="off" #pass="ngModel">
+            <label class="floating-label" for="pass">Password</label>
+            <!-- {{pass.errors | json}} -->
+            <div class="error" *ngIf="pass.invalid && pass.touched">Il testo non è valido</div>
+        </div>
+        <div class="">
+            <button class="btn btn-primary" type="submit" [disabled]="!miaForm.valid || miaForm.pristine">ENTRA</button>
+        </div>
+    </form>
+
+    <small><a class="und-link" href="#">Hai dimenticato la password?</a></small>
+    
+    <div class="line-separator"></div>
+    
+    <div class="">
+        <button class="btn btn-secondary" type="submit" [disabled]="!miaForm.valid || miaForm.pristine">REGISTRATI ORA</button>
+    </div>
+</div>

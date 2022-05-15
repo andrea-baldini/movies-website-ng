@@ -1,0 +1,10 @@
+<div class="movie-item" *ngIf="movieItem" (click)="openMovieDetail(movieItem.id)">
+    
+    <img class="movie-list-item-image" [src]="'https://image.tmdb.org/t/p/original/' + movieItem.poster_path" alt="">
+    
+    <div class="movie-info">
+        <h3 class="movie-title">{{movieItem.title}}</h3>
+        <p>{{movieItem.release_date}}</p>
+    </div>
+    
+</div>

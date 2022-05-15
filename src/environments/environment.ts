@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_KEY : "k_z6t99p69",
+  API_URL :  "https://imdb-api.com/en/API/"
 };
 
 /*

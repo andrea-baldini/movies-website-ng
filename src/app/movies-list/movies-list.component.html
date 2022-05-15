@@ -1,0 +1,66 @@
+<main class="pageBody">
+
+    <div class="flex-space-beetween">
+        <h1>Home</h1>
+
+        <app-search-bar class="destkop-searchbar"></app-search-bar>
+        
+    </div>
+
+    <!-- <app-full-movies-list *ngIf="isSearch"></app-full-movies-list> -->
+
+    <ng-container *ngIf="!isSearch">
+    <section class="most-popular" 
+        infiniteScroll
+        [infiniteScrollDistance]="3"
+        [infiniteScrollThrottle]="1000"
+        [infiniteScrollContainer]="'.most-popular'"
+        [fromRoot]="true"
+        (scrolled)="onScroll('most-popular')"
+        [horizontal]=true
+    >
+
+        <h2>Most Popular Movies</h2>
+
+        <div class="listMoviesbody">
+
+            <app-movie-item *ngFor="let m of movies" [movieItem]="m"></app-movie-item>
+
+        </div>
+
+
+    </section>
+
+    <section class="most-popular box-office" infiniteScroll [infiniteScrollDistance]="3" [infiniteScrollThrottle]="1000"
+        [infiniteScrollContainer]="'.box-office'" [fromRoot]="true" (scrolled)="onScroll('box-office')" [horizontal]=true>
+    
+        <h2>Box Office</h2>
+    
+        <div class="listMoviesbody">
+    
+            <app-movie-item *ngFor="let m of movieBox" [movieItem]="m"></app-movie-item>
+    
+        </div>
+    
+    
+    </section>
+
+    <section class="most-popular coming-soon" infiniteScroll [infiniteScrollDistance]="3" [infiniteScrollThrottle]="1000"
+        [infiniteScrollContainer]="'.coming-soon'" [fromRoot]="true" (scrolled)="onScroll('coming-soon')" [horizontal]=true>
+    
+        <h2>Coming Soon</h2>
+    
+        <div class="listMoviesbody">
+    
+            <app-movie-item *ngFor="let m of movieComing" [movieItem]="m"></app-movie-item>
+    
+        </div>
+
+    
+    </section>
+    </ng-container>
+
+</main>
+
+
+

@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001211;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, p, a {
+    color: #fff;
+}
+
+h1,h2,h3 {
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+a {
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+// h1 {
+//     font-size: 4vw;
+// }
+
+// h2, h3 {
+//     font-size: 3vh;
+// }
+
+// p {
+//     font-size: 1.5vmin;
+// }
+
+button.btn {
+
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-color: transparent !important;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &.btn-primary {
+
+        background-color: #00818a;
+
+        &:hover {
+            background-color: #09C;
+            transition: 0.4s;
+        }
+
+        &:active {
+            box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
+            transition: unset;
+        }
+
+    }
+    
+    &.btn-secondary {
+        background-color: #053f44;
+        
+        &:hover {
+            background-color: rgb(2, 109, 144);
+            transition: 0.4s;
+        }
+        
+        &:active {
+            box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
+            transition: unset;
+        }
+    }
+
+}
+
+.pageBody {
+    display: block;
+    margin: calc(91px + 1rem) 2rem;
+}
+
+
+
+    
+
+ 
+
+// button.btn-secondary {
+//     background-color: #05494e;
+// }
+
+    
+
+
